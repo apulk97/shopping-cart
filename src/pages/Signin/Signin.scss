@@ -1,0 +1,27 @@
+.signin-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1024px;
+    margin: 0 auto;
+
+    &__heading {
+        display: flex;
+        flex: 4;
+        flex-direction: column;
+        padding-top: 2rem;
+    }
+    &__form {
+        display: flex;
+        flex: 5;
+        flex-direction: column;
+        margin: 3.5rem auto;
+    }
+}
+
+.signin-button {
+    width: 60%;
+}
+
+.disclaimer{
+    font-size: 0.9rem;
+}

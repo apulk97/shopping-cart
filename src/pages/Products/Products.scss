@@ -1,0 +1,35 @@
+@import "../../styles/variables";
+
+.product-container {
+    display: flex;
+    height: 100%;
+    margin: 5px auto;
+    max-width: 1024px;
+
+    @media screen and (max-width: $mobile-breakpoint) {
+        flex-direction: column;
+    }
+
+    &__categories {
+        display: flex;
+        flex-direction: column;
+        background-color: #ddd;
+        min-width: 200px;
+
+        &__unit {
+            border-bottom: 1px solid #4d4d4d;
+            padding: 1rem 0.5rem;
+            margin: 0;
+            cursor: pointer;
+        }
+    }
+
+    &__items {
+        flex-grow: 1;
+        margin: 1rem;
+        display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+    }
+}

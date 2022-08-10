@@ -1,0 +1,52 @@
+@import "../../styles/variables";
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  width: 29%;
+  margin: 1rem;
+  padding: 1rem 0rem;
+  border-bottom: 1px dashed $nav-text-color;
+
+  @media screen and (max-width: $mobile-breakpoint) {
+    width: 100%;
+    &__description {
+      display: flex;
+      align-items: space-between;
+    }
+  }
+
+  &__text {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    margin: 1rem 0;
+    padding: 5px 5px;
+    background-color: $secondary-color;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: $text-font-size;
+    height: 6.8rem;
+    align-items: center;
+  }
+
+  &__image {
+      max-width: 200px;
+      max-height: 200px;
+      @media screen and (max-width: $mobile-breakpoint) {
+        max-width: 150px;
+      max-height: 150px;
+      }
+  }
+}
+
+.buy-section {
+  font-size: 0.8rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.heading {
+  font-size: 0.8rem;
+}
